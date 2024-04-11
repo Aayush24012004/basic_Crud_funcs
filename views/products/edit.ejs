@@ -14,7 +14,7 @@
         name="name"
         id="name"
         placeholder="Enter product name"
-        value="<%= product.name  %>"
+        value="<%= product.name %>"
       />
       <label for="price">Enter Product price</label>
       <input
@@ -24,7 +24,7 @@
         placeholder="Enter the price"
         value="<%=product.price %>"
       />
-      <label for="category">category</label>
+      <label for="category">Category</label>
       <select name="category" id="category" value>
         <% for(category of categories){ %>
         <option value="<%=category%>" <%=product.category=== category? 'selected':'' %>><%=category%> </option>
